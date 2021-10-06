@@ -1,0 +1,23 @@
+{
+    "website" : {
+      "support": "https://discord.gg/",
+      "domain": "https://hehe-1.marceloolivei10.repl.co"
+    },
+    "config": {
+        "http": {
+          "port": 80
+        },
+        "https": {
+            "paths": {
+                "privkey": "/etc/letsencrypt/live/https://hehe-1.marceloolivei10.repl.co/privkey.pem",
+                "fullchain": "/etc/letsencrypt/live/https://hehe-1.marceloolivei10.repl.co/fullchain.pem",
+                "chain": "/etc/letsencrypt/live/https://hehe-1.marceloolivei10.repl.co/chain.pem"
+            },
+            "enabled": false,
+            "port": 443
+        },
+        "callback": "https://hehe-1.marceloolivei10.repl.co/callback",
+        "clientID": "884933658534899752",
+        "secret": "g_HDFtM1yfnfBoxria28_boLIPtz-MXX"
+    }
+  }

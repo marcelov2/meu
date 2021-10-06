@@ -1,0 +1,108 @@
+<%- include('header'); -%>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Meta Tags-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">        
+        <link rel="stylesheet" href="/index.css">
+        <title><%= bot.name %></title>    
+    </head>
+    <body>
+        <!--HEADER-->
+        
+        <!--MAIN BODY-->
+      <section style="margin-bottom: 0;">
+        <div class="d-flex justify-content-center head">
+            <h1 style="font-weight: 900;">
+                <img src="<%= botClient.user.displayAvatarURL({size: 4096}) %>" style="width: 4%;margin-top: -0.5%;"> <span style="font-size: 40px;"><span style="color:#5663f7;"><%= botClient.user.username %></span> | Ultimate Music Experience</span>
+              </h1>
+        </div>
+        <div class="d-flex justify-content-center subtext">
+            <p style="font-style: italic;font-size: 30px;">O melhor bot de música com a melhor e mais alta qualidade que você já usou!</p>
+        </div>
+      </section>
+      
+      <section  style="margin-top: -15%;">
+
+        <div class="container">
+          <div class="row align-items-center mt-5">
+            <div class="col-md-5 col-lg-6 order-md-1 order-0"><img class="w-100" src="https://dm2304files.storage.live.com/y4pOnbjuDOnNY0v-UN9tTGez4ykIj7incydD1Ubv3vv83WPeA47TRtKlhWQYBlShxxMPRbOfW4knEaU0FPaOAA_sChIJcMTyNqJWMxnRSTPNP9XYx8N_9iVPiJNtWZlCkKoyhqG8Qs8IZ5L4QBL0O8tkP2L8xOS3xDdDvzO_lp5rf99BNrRsnPUsP4Fp-cUT8uje0VZtF4cN_E7V9NzwLbmrRK7M28jeWT7ilv999lSJOg/5555.png?psid=1&width=581&height=557" alt="" /></div>
+            <div class="col-md-7 col-lg-6 pe-lg-4 pe-xl-7">
+              <div class="d-flex align-items-start"><img class="me-4" src="https://cdn.discordapp.com/emojis/850924066517155871.png?v=1" alt="" width="30" />
+                <div class="flex-1">
+                  <h5>Todos os comandos necessários para o seu servidor</h5>
+                  <p class="text-muted mb-4">Você está cansado de ter um Music Bot com milhares de comandos? Transmusic tem todos os comandos necessários em apenas um único bot!
+                    <br> Embora eles não vejam "muito", você pode usar nossas estruturas de comando para adicionar um dos <b><%= Object.keys(BotFilters).length %> Filters!</b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row align-items-center mt-5">
+              <div class="col-md-5 col-lg-6 order-md-0 order-1"><img class="w-100" src="https://dm2304files.storage.live.com/y4pGuNS_qW1oBXL30-XmWpQ5Q0UANHzj9KOj8v6ceVWefyjAEUIW-XxlLurP6C9UFIwuTpFg89xPRPJFd_H6X7mNaJfTIl4d_McQLNBrN4Yam4vAA-r0OR07Oc9jtrqp-6QkjpgYbPFvA9XZ0IccHRXUVYrFiyfhaayPPry_eg9WEvGkhQNFqkgd4EAZWEYkSmTpvXJhgxv-9lYd0-NlebV0hDJ8nVY2WLr1lx-P4L2MbY/cats.jpg?psid=1&width=686&height=369" alt="" /></div>
+              <div class="col-md-7 col-lg-6 pe-lg-4 pe-xl-7">
+                <div class="d-flex align-items-start"><img class="me-4" src="https://cdn.discordapp.com/emojis/850924929444610048.png?v=1" alt="" width="30" />
+                  <div class="flex-1">
+                    <h5>Ultimate Music Experiences means, <%= Object.keys(BotFilters).length %> Filtros para ajustar o seu áudio!</h5>
+                    <p class="text-muted mb-4">Estamos usando o FFMPEG, para dar a você a mais alta qualidade de áudio possível! Na verdade, nós os geramos instantaneamente e não temos nenhum lag!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+
+          <div class="container">
+            <div class="row align-items-center mt-5">
+              <div class="col-md-5 col-lg-6 order-md-1 order-0"><img class="w-100" src="https://i.imgur.com/wXwAvIi.png" alt="" /></div>
+              <div class="col-md-7 col-lg-6 pe-lg-4 pe-xl-7">
+                <div class="d-flex align-items-start"><img class="me-4" src="https://cdn.discordapp.com/emojis/850831345051762719.png?v=1" alt="" width="30" />
+                  <div class="flex-1">
+                    <h5>Spotify, Soundcloud, Youtube, and 1100+ Outros links suportados!</h5>
+                    <p class="text-muted mb-4">Apoiamos tudo o que você ouve!
+                        INCLUINDO PLAYLISTS E<b>20 PLAYLISTS PREDEFINIDOS, otimizados! (misturar)</b></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+
+            <div class="container">
+              <div class="row align-items-center mt-5">
+                <div class="col-md-5 col-lg-6 order-md-0 order-1"><img class="w-100" src="https://i.imgur.com/orpW86s.png" alt="" /></div>
+                <div class="col-md-7 col-lg-6 pe-lg-4 pe-xl-7">
+                  <div class="d-flex align-items-start"><img class="me-4" src="https://cdn.discordapp.com/emojis/853006694312574977.png?v=1" alt="" width="30" />
+                    <div class="flex-1">
+                      <h5>Interface limpa, com logs e botões instantâneos!</h5>
+                      <p class="text-muted mb-4">Para que você possa obter tudo o que deseja instantaneamente do Bot,</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>  
+    
+    </section>
+      <!-- FOOTER-->
+      <section>
+        <div class="card-footer" style="margin-top:15%;text-align: center;color: #5663f7;">
+          <hr style="width: 75%;background-color: #FFFFFF!important;color: #FFFFFF!important;border: 5px solid #FFFFFF!important;border-radius:25px;margin-left: 12%;">
+          <h4 style="margin-top:5%;">
+            <img src="<%= botClient.user.displayAvatarURL({size: 4096}) %>" style="width: 4%;margin-top: -0.5%;"> <span style="font-size: 40px;"><%= botClient.user.username %> | Ultimate Music Experience</span>
+          </h4>
+          <h5 style="text-align: center;">
+            <a href="https://www.instagram.com/marcelv21/" target="_blank" style="font-size: 12px; color: #888a9b!important;text-decoration: none;">&copy; Copyright Transmusic | All rights served.</a><br><br>
+            <a href="https://www.instagram.com/marcelv21/" target="_blank" style="font-size: 20px; color: #5663f7!important;text-decoration: none;">Developed by <code>Marcelo</code> | [Insta]</a>
+          </h5>
+        </div>
+      </section>
+
+       <!--JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    </body>
+</html>
